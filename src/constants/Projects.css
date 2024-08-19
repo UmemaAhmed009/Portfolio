@@ -1,0 +1,59 @@
+.video-wrapper {
+    width: auto;
+    height: inherit;
+  }
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    padding-bottom: 85%; 
+    /* background-size: cover; */
+    background-position: center;
+    border-radius: 2%;
+
+    /* cursor: pointer; */
+  }
+  .thumbnail1{
+    background-image: url('../assets/Ktateb.png');
+    border-radius: 2%;
+    background-size: cover;
+  }
+  .thumbnail2 {
+    background-image: url('../assets/FYP.png');
+    border-radius: 2%;
+    background-size: contain;
+
+  }
+  .thumbnail3{
+    background-image: url("../assets/Cloudlit.png");
+    border-radius: 2%;
+    background-size: contain;
+  }
+  
+.video-thumbnail::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%);
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000; /* Optional: Background color while loading */
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    /* margin: 2%; */
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
