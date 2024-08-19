@@ -6,6 +6,7 @@ import {
   Input,
 } from "@material-tailwind/react";
 import { BellIcon, Cog6ToothIcon } from "@heroicons/react/24/solid";
+import logo from "/logo.png"
  
 export function NavBar() {
   return (
@@ -29,7 +30,7 @@ export function NavBar() {
 
       <div className="flex flex-wrap items-center justify-between gap-y-4 text-white">
         <img className="h-12 w-12"
-          src ="/logo.png"
+          src ={logo}
         ></img>
         <div className="ml-auto flex gap-1 md:mr-4">
         <Typography
