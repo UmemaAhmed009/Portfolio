@@ -3,33 +3,6 @@ import '../constants/HeroSection.css';
 import {
   Typography,
 } from "@material-tailwind/react";
-// import {
-//   RectangleStackIcon,
-//   UserCircleIcon,
-//   CommandLineIcon,
-//   Squares2X2Icon,
-// } from "@heroicons/react/24/solid";
-// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
-// interface NavItemPropsType {
-//   children: React.ReactNode;
-// }
-
-// function NavItem({ children }: NavItemPropsType) {
-//   return (
-//     <li>
-//       <Typography
-//         as="a"
-//         href="#"
-//         variant="paragraph"
-//         color="blue-gray"
-//         className="text-blue-gray-700 flex items-center gap-2 font-medium"
-//       >
-//         {children}
-//       </Typography>
-//     </li>
-//   );
-// }
 
 export function HeroSection() {
   const [open, setOpen] = React.useState(false);
@@ -44,15 +17,16 @@ export function HeroSection() {
 
   return (
     <>
-      <header className="mb-16 mx-auto max-w-screen-xl p-24">
-        <div class="flex flex-row flex-nowrap">
+      <header className="mb-16 mx-auto max-w-screen-xl p-6 md:p-12 lg:p-24">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start">
         {/* <div className="flex-initial min-h-[50vh] w-2.2/3 lg:h-[20rem] md:h-[34rem] bg-white"> */}
             <div className="flex-1 min-h-[50vh] w-2.2/3 lg:h-[20rem] md:h-[34rem]">
                 <div className="container mx-auto px-4 text-left">
                     <Typography
                     variant="h1"
                     color="white"
-                    className="font-sans text-left my-6 w-full leading-snug  !text-2xl lg:max-w-3xl lg:!text-5xl"
+                    // font-sans text-left my-6 w-full leading-snug  !text-2xl lg:max-w-3xl lg:!text-5xl
+                    className="font-sans text-left my-6 w-full leading-snug !text-2xl md:!text-3xl lg:text-4xl xl:!text-5xl"
                     >
                     Hi,<br />
                     I'm Umema,<br />
@@ -66,7 +40,7 @@ export function HeroSection() {
                     >
                     I craft innovative solutions with code and creativity. <br></br>CS graduate from IBA. Based in Karachi. 
                     </Typography>
-                    <div class="mt-6 flex flex-wrap gap-8">
+                    <div class="mt-6 flex flex-wrap gap-4 md:gap-6 lg:gap-8">
 
                         <a href="https://wa.me/+923342888097" target="_blank" rel="noopener noreferrer">
                         <button class="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-teal-500">
@@ -105,7 +79,7 @@ export function HeroSection() {
                     </div>
                 </div>
             </div>
-            <div className="flex-1 ml-30 w-full h-[50vh] bg-[url('./assets/astronaut.png')] bg-cover bg-center bg-no-repeat bounce">
+            <div className="flex-1 w-full h-[30vh] md:h-[50vh] lg:h-[60vh] bg-[url('./assets/astronaut.png')] bg-cover bg-center bg-no-repeat bounce">
 
             </div>
         </div>

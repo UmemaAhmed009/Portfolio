@@ -15,14 +15,8 @@ import {
   } from "@material-tailwind/react";
   
   export function Projects() {
-    const[isPlaying, setIsPlaying] = useState(false);
-
-    const playVideo = () =>{
-        setIsPlaying(true);
-    }
-
     return (
-    <div id="projects">
+    <div id="projects" className="px-4 pt-24">
         <Typography
             variant="h1"
             color="white"
@@ -36,17 +30,18 @@ import {
         
 
       {/* <section className="flex flex-row flex-wrap justify-center gap-4 p-8 "> */}
-      <section className=" relative py-12">
-      <div class="flex justify-center overflow-x-scroll hide-scroll-bar space-x-6">
+      <section className="relative py-12">
+      <div className="flex flex-wrap justify-center gap-4">
+      {/* <div class="flex justify-center overflow-x-scroll hide-scroll-bar space-x-6"> */}
         {/* h-screen place-items-center p-4 */}
-        <div class="flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
+        <div class="w-full sm:w-72 lg:w-80 flex-shrink rounded-lg shadow-lg bg-white">
                 <img class="rounded-t-lg w-full" src={ktateb} alt="Ktateb"></img>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Ktateb</h3>
                     <p class="text-gray-700">Worked on backend of this ed-tech mobile app for a Saudi client during my part-time job in WonderTech.</p>
                 </div>
             </div>
-        <div class="flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
+        <div class="w-full sm:w-72 lg:w-80 flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
                 <img class="rounded-t-lg w-full" src={cloudlit} alt="Cloudlit website"></img>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Cloudlit website</h3>
@@ -68,7 +63,7 @@ import {
                     </svg>
                 </div>
             </div>
-        <div class="flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
+        <div class="w-full sm:w-72 lg:w-80 flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
                 <img class="rounded-t-lg w-full" src={fyp} alt="Final Year Project"></img>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">X-ray Auto Reporting</h3>
@@ -85,7 +80,7 @@ import {
                   </a>
                 </div>
             </div>
-        <div class="flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
+        <div class="w-full sm:w-72 lg:w-80 flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
                 <img class="rounded-t-lg w-full" src={fun2learn} alt="Fun2Learn"></img>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Fun2Learn</h3>
@@ -102,10 +97,10 @@ import {
                     </a>
                 </div>
           </div>
-        </div>
+    </div>
         </section>
       <a href="/resume/Umema Resume_SE.pdf" target="_blank" rel="noopener noreferrer" download="umema_resume.pdf">
-      <Button className="flex flex-row ml-[40rem] mt-6">
+      <Button className="flex flex-row items-center justify-center mx-auto mt-6">
       <Typography variant="small" className="text-gray-300 hover:text-white">
         Download CV
         </Typography>

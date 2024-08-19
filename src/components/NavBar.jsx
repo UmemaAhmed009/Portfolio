@@ -25,22 +25,25 @@ export function NavBar() {
     <Navbar
   // variant="gradient"
   // color="transparent"
-  className="sticky top-8 z-50 mx-auto max-w-screen-lg bg-gray-900 px-4 py-3 rounded-full border-teal-900 "
+  className="sticky top-6 z-50 mx-auto max-w-screen-lg bg-gray-900 bg-opacity-50 px-4 py-3 rounded-full border-gray-500 "
 >
-
+    
       <div className="flex flex-wrap items-center justify-between gap-y-4 text-white">
+        <a
+        href="#">
         <img className="h-12 w-12"
           src ={logo}
         ></img>
+        </a>
         <div className="ml-auto flex gap-1 md:mr-4">
-        <Typography
+        {/* <Typography
           as="a"
           href="#"
           variant="h6"
           className="mr-4 ml-2 cursor-pointer py-1.5 hover:text-teal-500"
         >
           Home
-        </Typography>
+        </Typography> */}
         <Typography
           as="a"
           href="#about-me"

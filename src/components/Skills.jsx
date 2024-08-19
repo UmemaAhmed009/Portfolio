@@ -28,7 +28,7 @@ import {
 
 export function Skills() {
     return(
-        <div id="skills" className="mt-24"> 
+        <div id="skills" className="mt-16 pt-24"> 
             <Typography
             variant="h1"
             color="white"
@@ -39,7 +39,7 @@ export function Skills() {
             color="white"
         >My technical expertise lies in:
         </Typography>
-        <section className="flex flex-row justify-center gap-8 py-4">
+        <section className="flex flex-row flex-wrap px-4 justify-center gap-8 py-4">
             {/* <div className="ml-40"> */}
                         
             {/*Card 1*/}
