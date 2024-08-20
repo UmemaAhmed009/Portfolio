@@ -1,13 +1,12 @@
 import React from "react";
+import {useState, useEffect} from "react";
+import TypeWriter from "./TypeWriter";
 import '../constants/HeroSection.css';
 import {
   Typography,
 } from "@material-tailwind/react";
 
 export function HeroSection() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen((cur) => !cur);
-
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -24,21 +23,18 @@ export function HeroSection() {
                 <div className="container mx-auto px-4 text-left">
                     <Typography
                     variant="h1"
-                    color="white"
                     // font-sans text-left my-6 w-full leading-snug  !text-2xl lg:max-w-3xl lg:!text-5xl
-                    className="font-sans text-left my-6 w-full leading-snug !text-2xl md:!text-3xl lg:text-4xl xl:!text-5xl"
-                    >
-                    Hi,<br />
-                    I'm Umema,<br />
-                    <span className="animate-slidein opacity-0 forwards ... bg-gradient-to-l from-[#000000] to-teal-700 leading-snug ">
-                        software developer.
-                    </span>
+                    className="text-gray-400 font-mono text-left my-6 w-full leading-snug !text-2xl md:!text-3xl lg:text-4xl xl:!text-5xl" >
+                    <TypeWriter text="   Hi, I am Umema, full stack web developer." withGradient={true}/>
+                    {/* <span className="bg-gradient-to-l from-[#000000] to-teal-700 leading-snug"></span> */}
+                    <span className="cursor">|</span>
                     </Typography>
+
                     <Typography
                     variant="lead"
-                    className="mx-auto w-full !text-[#c8cacf] lg:text-lg text-base "
+                    className="font-serif mx-auto w-full !text-[#c8cacf] lg:text-xl text-base "
                     >
-                    I craft innovative solutions with code and creativity. <br></br>CS graduate from IBA. Based in Karachi. 
+                    I craft innovative solutions with code and creativity. CS graduate from IBA. <br></br>Based in Karachi. 
                     </Typography>
                     <div class="mt-6 flex flex-wrap gap-4 md:gap-6 lg:gap-8">
 

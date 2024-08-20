@@ -1,30 +1,32 @@
 import React from "react";
-import image from "../assets/bg.png"
+import {
+    Typography,
+  } from "@material-tailwind/react";
+
 
 export function AboutMe(){
-    // px-4 py-16 mb-16 mx-auto max-w-screen-xl bg-[url('./assets/bg.png')] bg-cover bg-center sm:bg-right-top md:bg-center lg:bg-cover min-h-screen "
     return(
-        <section id="about-me" className="px-4 py-12 mb-2 mx-2 lg:mx-auto max-w-screen-xl bg-[url('./assets/bg.png')] bg-cover min-h-64 bg-no-repeat bg-center sm:bg-cover sm:min-h-screen ">
-        </section>
-        // <section
-    //   id="about-me"
-    //   className="relative min-h-screen px-4 py-12 mb-4 mx-2 lg:mx-auto max-w-screen-xl sm:px-8 md:px-16 lg:px-24 xl:px-32"
-    // >
-    //   {/* Background Image Container */}
-    //   <div className="absolute inset-0">
-    //     <img
-    //       src={image}
-    //       alt="About Me Background"
-    //       className="w-full h-full object-fit object-center sm:object-right-top md:object-center"
-    //     />
-    //   </div>
-    // </section>
-    //     // <section id="about-me" className="py-12">
-    //     //   <div class="w-full sm:w-72 lg:w-80 flex-shrink rounded-lg">
-    //     //           <img class="rounded-t-lg w-full" src={bg} alt="About-Me Image"></img>
-    //     // </div>
-    //     // </section>
+        <section id="about-me"  className="flex flex-col items-center min-h-screen mx-auto sm:mx-8 bg-[url('./assets/z12.jpg')] sm:bg-contain bg-center bg-no-repeat">
+            <div className="px-4 divide-y-4 divide-purple-400 sm:w-3/5">
+            <Typography 
+            variant="h1"
+            color="purple"
+            className="font-mono mt-32 bg-gradient-to-r from-rose-400 to-blue-400 text-transparent bg-clip-text"
+            >Hello, World!     
+            </Typography>
+            <Typography 
+            variant="lead"
+            color="white"
+            className="font-serif p-4 text-gray-300"
+            >                
+             I'm a Computer Science graduate from IBA, Class of 2024, with 6 months of experience as a junior backend developer.<br />
+             Passionate about learning, I am always on the lookout for new challenges that push my boundaries. <br/>Problem-solving is more than just a skill for me—it's a source of fulfillment.
+            </Typography>
+            </div>
+            
 
+
+        </section>
     )
 }
 export default AboutMe;

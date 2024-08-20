@@ -20,11 +20,13 @@ import {
         <Typography
             variant="h1"
             color="white"
+            className="font-serif"
         >Featured Projects
         </Typography>
         <Typography
-            variant="h3"
+            variant="lead"
             color="white"
+            className="font-serif text-2xl"
         >Have a look at some of my highlighted projects
         </Typography>
         

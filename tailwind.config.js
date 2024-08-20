@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const withMT = require("@material-tailwind/react/utils/withMT");
+const { emerald } = require('tailwindcss/colors');
  
 module.exports = withMT({
   content: [
@@ -10,10 +11,19 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['ui-sans-serif', 'system-ui'],
+        'serif': ['ui-serif', 'Georgia'],
+        'mono': ['ui-monospace', 'SFMono-Regular','monospace'],
+        'roboto':['"Roboto Serif"','system-ui']
+      },
       colors: {
         zinc: require('tailwindcss/colors').zinc,
         stone: require('tailwindcss/colors').stone,
         neutral: require('tailwindcss/colors').neutral,
+        rose: require('tailwindcss/colors').rose,
+        fuchsia: require('tailwindcss/colors').fuchsia,
+        emerald: require('tailwindcss/colors').emerald,
       },
       keyframes: {
         slidein: {

@@ -10,3 +10,20 @@
   .bounce {
     animation: bounce 4s infinite;
   }
+
+  .cursor 
+    {
+      display: inline-block;
+      color: currentColor;
+      animation: blink 1s ease-in-out 0s infinite alternate;
+  }
+  
+  @keyframes blink {
+      from {
+          opacity: 1;
+      }
+      to {
+          opacity: 0;
+      }
+
+  }

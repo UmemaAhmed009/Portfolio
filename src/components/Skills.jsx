@@ -32,11 +32,13 @@ export function Skills() {
             <Typography
             variant="h1"
             color="white"
+            className="font-serif"
         >Skills
         </Typography>
             <Typography
             variant="h5"
             color="white"
+            className="font-serif"
         >My technical expertise lies in:
         </Typography>
         <section className="flex flex-row flex-wrap px-4 justify-center gap-8 py-4">
@@ -45,10 +47,10 @@ export function Skills() {
             {/*Card 1*/}
             <Card className="w-auto max-w-[28rem] mb-4 p-4 bg-teal-500">
                 <CardHeader floated={false} shadow={false} className="rounded-none bg-teal-500 pb-4">
-                    <Typography variant="h2"  color="white">
+                    <Typography variant="h2"  color="white" className="font-serif">
                         Core Tech
                     </Typography>
-                    <Typography variant="h5"  color="white">
+                    <Typography variant="h5"  color="white" className="font-serif">
                         Experienced in: 
                     </Typography>
                 </CardHeader>
@@ -119,10 +121,9 @@ export function Skills() {
                         </Typography>
                         </div>
                     </Card>
-                </div>
 
-                <div className="grid grid-cols-2 gap-1 mt-4">
-                <Card className="col-span-3 flex flex-row mb-2 mr-2 px-4 py-2">
+                {/* <div className="grid grid-cols-2 gap-1 mt-4"> */}
+                <Card className="flex flex-row mb-2 mr-2 px-4 py-2">
                     <img
                         src={oracle}
                         alt="oracle image"
@@ -176,10 +177,10 @@ export function Skills() {
             {/*Card 2*/}
             <Card className="w-auto max-w-[28rem] mb-4 p-4 bg-purple-400">
                 <CardHeader floated={false} shadow={false} className="rounded-none pb-4 bg-inherit">
-                        <Typography variant="h2" color="white">
+                        <Typography variant="h2" color="white" className="font-serif">
                             Libraries and Environments
                         </Typography>
-                        <Typography variant="h5" color="white">
+                        <Typography variant="h5" color="white" className="font-serif">
                             Experience with: 
                         </Typography>
 
