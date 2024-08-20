@@ -10,21 +10,7 @@ import logo from "/logo.png"
  
 export function NavBar() {
   return (
-    // <Navbar
-    //   variant="gradient"
-    //   color="teal"
-    //   className="mx-auto max-w-screen-xxxl from-black to-teal px-4 py-3"
-      // className="mx-auto max-w-screen-xxxl bg-opacity-80 px-4 py-3"
-
-    // >
-    //  {/* <Navbar */}
-    //   {/* //   variant="gradient"
-    //   //   color="black"
-    //   //   className="mx-auto max-w-screen-xxxl bg-gradient-to-r from-black via-#002244 to-#003366 bg-opacity-80 px-4 py-3"
-    //   // > */}
     <Navbar
-  // variant="gradient"
-  // color="transparent"
   className="sticky top-6 z-50 mx-auto max-w-screen-lg bg-gray-900 bg-opacity-50 px-4 py-3 rounded-full border-gray-500 "
 >
     
@@ -36,19 +22,11 @@ export function NavBar() {
         ></img>
         </a>
         <div className="ml-auto flex gap-1 md:mr-4">
-        {/* <Typography
-          as="a"
-          href="#"
-          variant="h6"
-          className="mr-4 ml-2 cursor-pointer py-1.5 hover:text-teal-500"
-        >
-          Home
-        </Typography> */}
         <Typography
           as="a"
           href="#about-me"
           variant="h6"
-          className="mr-4 ml-2 cursor-pointer py-1.5 hover:text-teal-500"
+          className="font-serif mr-4 ml-2 cursor-pointer py-1.5 hover:text-teal-500"
         >
           About Me
         </Typography>
@@ -56,7 +34,7 @@ export function NavBar() {
           as="a"
           href="#projects"
           variant="h6"
-          className="mr-4 ml-2 cursor-pointer py-1.5 hover:text-teal-500"
+          className="font-serif mr-4 ml-2 cursor-pointer py-1.5 hover:text-teal-500"
         >
           Projects
         </Typography>
@@ -64,7 +42,7 @@ export function NavBar() {
           as="a"
           href="#skills"
           variant="h6"
-          className="mr-4 ml-2 cursor-pointer py-1.5 hover:text-teal-500"
+          className="font-serif mr-4 ml-2 cursor-pointer py-1.5 hover:text-teal-500"
         >
           Skills
         </Typography>
