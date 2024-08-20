@@ -16,7 +16,7 @@ export function HeroSection() {
 
   return (
     <>
-      <header className="mb-16 mx-auto max-w-screen-xl p-6 md:p-12 lg:p-24">
+      <header className="mx-auto min-h-screen max-w-screen-xl p-6 md:p-12 lg:p-24">
         <div class="flex flex-col lg:flex-row items-center lg:items-start">
         {/* <div className="flex-initial min-h-[50vh] w-2.2/3 lg:h-[20rem] md:h-[34rem] bg-white"> */}
             <div className="flex-1 min-h-[50vh] w-2.2/3 lg:h-[20rem] md:h-[34rem]">
@@ -24,15 +24,14 @@ export function HeroSection() {
                     <Typography
                     variant="h1"
                     // font-sans text-left my-6 w-full leading-snug  !text-2xl lg:max-w-3xl lg:!text-5xl
-                    className="text-gray-400 font-mono text-left my-6 w-full leading-snug !text-2xl md:!text-3xl lg:text-4xl xl:!text-5xl" >
+                    className="font-mono my-6 w-full leading-snug  !text-4xl sm:!text-5xl md:!text-5xl lg:text-5xl xl:!text-5xl" >
                     <TypeWriter text="   Hi, I am Umema, full stack web developer." withGradient={true}/>
-                    {/* <span className="bg-gradient-to-l from-[#000000] to-teal-700 leading-snug"></span> */}
                     <span className="cursor">|</span>
                     </Typography>
 
                     <Typography
                     variant="lead"
-                    className="font-serif mx-auto w-full !text-[#c8cacf] lg:text-xl text-base "
+                    className="font-serif mx-auto w-full !text-[#c8cacf] sm:text-2xl text-xl "
                     >
                     I craft innovative solutions with code and creativity. CS graduate from IBA. <br></br>Based in Karachi. 
                     </Typography>

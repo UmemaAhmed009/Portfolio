@@ -14,7 +14,7 @@ export function NavBar() {
   className="sticky top-6 z-50 mx-auto max-w-screen-lg bg-gray-900 bg-opacity-50 px-4 py-3 rounded-full border-gray-500 "
 >
     
-      <div className="flex flex-wrap items-center justify-between gap-y-4 text-white">
+      <div className="flex flex-row flex-wrap items-center justify-between gap-y-4 text-white">
         <a
         href="#">
         <img className="h-12 w-12"
@@ -26,7 +26,7 @@ export function NavBar() {
           as="a"
           href="#about-me"
           variant="h6"
-          className="font-serif mr-4 ml-2 cursor-pointer py-1.5 hover:text-teal-500"
+          className="font-serif mr-2 ml-2 cursor-pointer py-1.5 hover:text-teal-500"
         >
           About Me
         </Typography>
@@ -34,7 +34,7 @@ export function NavBar() {
           as="a"
           href="#projects"
           variant="h6"
-          className="font-serif mr-4 ml-2 cursor-pointer py-1.5 hover:text-teal-500"
+          className="font-serif mr-2 sm:ml-2 cursor-pointer py-1.5 hover:text-teal-500"
         >
           Projects
         </Typography>
@@ -42,7 +42,7 @@ export function NavBar() {
           as="a"
           href="#skills"
           variant="h6"
-          className="font-serif mr-4 ml-2 cursor-pointer py-1.5 hover:text-teal-500"
+          className="font-serif mr-2 sm:ml-2 cursor-pointer py-1.5 hover:text-teal-500"
         >
           Skills
         </Typography>
