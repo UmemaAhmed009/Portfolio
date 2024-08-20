@@ -43,7 +43,7 @@ export function Skills() {
             {/* <div className="ml-40"> */}
                         
             {/*Card 1*/}
-            <Card className="w-auto max-w-[28rem] mb-4 p-4 bg-teal-500 rounded-lg">
+            <Card className="w-auto max-w-[28rem] mb-4 p-4 bg-teal-500">
                 <CardHeader floated={false} shadow={false} className="rounded-none bg-teal-500 pb-4">
                     <Typography variant="h2"  color="white">
                         Core Tech
@@ -52,12 +52,12 @@ export function Skills() {
                         Experienced in: 
                     </Typography>
                 </CardHeader>
-                <div className="grid grid-cols-2 gap-4 mt-4 ">
+                <div className="flex flex-wrap justify-center mt-4 gap-2">
                     <Card className="flex flex-row mb-2 mr-2 px-4 py-2">
                         <img
                         src={javaLogo}
                         alt="Java image"
-                        className="w-10 h-10 mr-4"
+                        className="w-10 h-10 mr-2"
                         attributionsrc="https://www.flaticon.com/free-icons/java"
                         />
                          
@@ -75,7 +75,7 @@ export function Skills() {
                     <img
                         src={pythonLogo}
                         alt="Python image"
-                        className="w-10 h-10 mr-4"
+                        className="w-10 h-10 mr-2"
                         attributionsrc="https://www.flaticon.com/free-icons/python"
                         />
                         <div>
@@ -91,7 +91,7 @@ export function Skills() {
                     <img
                         src={cLogo}
                         alt="C image"
-                        className="w-10 h-10 mr-4"
+                        className="w-10 h-10 mr-2"
                         attributionsrc="https://www.flaticon.com/free-icons/c"
                         />
                         <div>
@@ -107,7 +107,7 @@ export function Skills() {
                     <img
                         src={jsLogo}
                         alt="JS image"
-                        className="w-10 h-10 mr-4"
+                        className="w-10 h-10 mr-2"
                         attributionsrc="https://www.flaticon.com/free-icons/javascript"
                         />
                         <div>
@@ -126,7 +126,7 @@ export function Skills() {
                     <img
                         src={oracle}
                         alt="oracle image"
-                        className="w-10 h-10 mr-4"
+                        className="w-10 h-10 mr-2"
                         />   
                         <div>
                         <Typography variant="h5" color="blue-gray">
@@ -142,7 +142,7 @@ export function Skills() {
                     <img
                         src={mySQL}
                         alt="mysql image"
-                        className="w-10 h-10 mr-4"
+                        className="w-10 h-10 mr-2"
                         />                       
                         <div>
                         <Typography variant="h5"  color="blue-gray">
@@ -158,7 +158,7 @@ export function Skills() {
                     <img
                         src={mongoDB}
                         alt="mongoDB image"
-                        className="w-10 h-10 mr-4"
+                        className="w-10 h-10 mr-2"
                         />     
                         <div>
                         <Typography variant="h5"  color="blue-gray">
