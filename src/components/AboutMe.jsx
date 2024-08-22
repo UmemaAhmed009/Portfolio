@@ -6,8 +6,8 @@ import {
 
 export function AboutMe(){
     return(
-        <section id="about-me"  className="flex flex-col items-center min-h-screen mx-auto sm:mx-8 bg-[url('./assets/z12.jpg')] sm:bg-contain bg-center bg-no-repeat">
-            <div className="px-4 divide-y-4 divide-purple-400 sm:w-3/5">
+        <section id="about-me"  className="flex flex-col items-center min-h-screen mx-auto  bg-[url('./assets/z12.jpg')] md:bg-contain bg-center bg-no-repeat">
+            <div className="px-4 divide-y-4 divide-purple-400 sm:full md:w-3/5">
             <Typography 
             variant="h1"
             color="purple"

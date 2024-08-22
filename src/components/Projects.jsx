@@ -4,7 +4,7 @@ import ktateb from '../assets/Ktateb.png'
 import fyp from '../assets/FYP.png'
 import cloudlit from '../assets/Cloudlit.png'
 import fun2learn from '../assets/Fun2Learn.png'
-
+import resume from '/resume/umema_resume.pdf'
 import {
     Card,
     CardHeader,
@@ -36,14 +36,14 @@ import {
       <div className="flex flex-wrap justify-center gap-4">
       {/* <div class="flex justify-center overflow-x-scroll hide-scroll-bar space-x-6"> */}
         {/* h-screen place-items-center p-4 */}
-        <div class="w-full sm:w-72 lg:w-80 flex-shrink rounded-lg shadow-lg bg-white">
+        <div class="w-full sm:w-4/5 lg:w-80 flex-shrink rounded-lg shadow-lg bg-white">
                 <img class="rounded-t-lg w-full" src={ktateb} alt="Ktateb"></img>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Ktateb</h3>
                     <p class="text-gray-700">Worked on backend of this ed-tech mobile app for a Saudi client during my part-time job in WonderTech.</p>
                 </div>
             </div>
-        <div class="w-full sm:w-72 lg:w-80 flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
+        <div class="w-full sm:w-4/5 lg:w-80 flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
                 <img class="rounded-t-lg w-full" src={cloudlit} alt="Cloudlit website"></img>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Cloudlit website</h3>
@@ -65,7 +65,7 @@ import {
                     </svg>
                 </div>
             </div>
-        <div class="w-full sm:w-72 lg:w-80 flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
+        <div class="w-full sm:w-4/5 lg:w-80 flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
                 <img class="rounded-t-lg w-full" src={fyp} alt="Final Year Project"></img>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">X-ray Auto Reporting</h3>
@@ -82,7 +82,7 @@ import {
                   </a>
                 </div>
             </div>
-        <div class="w-full sm:w-72 lg:w-80 flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
+        <div class="w-full sm:w-4/5 lg:w-80 flex-shrink-0 w-72 rounded-lg shadow-lg bg-white">
                 <img class="rounded-t-lg w-full" src={fun2learn} alt="Fun2Learn"></img>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Fun2Learn</h3>
@@ -101,7 +101,7 @@ import {
           </div>
     </div>
         </section>
-      <a href="/resume/Umema Resume_SE.pdf" target="_blank" rel="noopener noreferrer" download="umema_resume.pdf">
+      <a href={resume} target="_blank" rel="noopener noreferrer" download="umema_resume.pdf">
       <Button className="flex flex-row items-center justify-center mx-auto mt-6">
       <Typography variant="small" className="text-gray-300 hover:text-white">
         Download CV
