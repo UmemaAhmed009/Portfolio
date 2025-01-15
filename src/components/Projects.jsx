@@ -4,7 +4,7 @@ import ktateb from '../assets/Ktateb.png'
 import fyp from '../assets/FYP.png'
 import cloudlit from '../assets/Cloudlit.png'
 import fun2learn from '../assets/Fun2Learn.png'
-import resume from '/resume/umema_resume.pdf'
+import resume from '/resume/UmemaAhmedResume.pdf'
 import {
     Card,
     CardHeader,
