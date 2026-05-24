@@ -25,7 +25,7 @@ export function HeroSection() {
                     variant="h1"
                     // font-sans text-left my-6 w-full leading-snug  !text-2xl lg:max-w-3xl lg:!text-5xl
                     className="font-mono my-6 w-full leading-snug  !text-4xl sm:!text-5xl md:!text-5xl lg:text-5xl xl:!text-5xl" >
-                    <TypeWriter text="   Hi, I am Umema, full stack web developer." withGradient={true}/>
+                    <TypeWriter text="   Hi, I am Umema, mobile application developer." withGradient={true}/>
                     <span className="cursor">|</span>
                     </Typography>
 
@@ -33,7 +33,7 @@ export function HeroSection() {
                     variant="lead"
                     className="font-serif mx-auto w-full !text-[#c8cacf] sm:text-2xl text-xl "
                     >
-                    I craft innovative solutions with code and creativity. CS graduate from IBA. <br></br>Based in Karachi. 
+                    I craft innovative solutions with code and creativity. Currently exploring AI to contribute to real-world, intelligent systems. CS graduate from IBA. <br></br>Based in Karachi. 
                     </Typography>
                     <div class="mt-6 flex flex-wrap gap-4 md:gap-6 lg:gap-8">
 
