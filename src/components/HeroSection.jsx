@@ -33,7 +33,7 @@ export function HeroSection() {
                     variant="lead"
                     className="font-serif mx-auto w-full !text-[#c8cacf] sm:text-2xl text-xl "
                     >
-                    I craft innovative solutions with code and creativity. Currently exploring AI to contribute to real-world, intelligent systems. CS graduate from IBA. <br></br>Based in Karachi.[...]
+                    I craft innovative solutions with code and creativity. Currently exploring AI to contribute to real-world, intelligent systems. CS graduate from IBA. <br></br>Based in Karachi.
                     </Typography>
                     <div className="mt-6 flex flex-wrap gap-4 md:gap-6 lg:gap-8">
 
